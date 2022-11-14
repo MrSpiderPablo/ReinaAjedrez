@@ -5,6 +5,12 @@ public class Posicion
 	private int fila;
 	private char columna;
 	
+	public Posicion(int fila, char columna) 
+	{
+		this.fila = fila;
+		this.columna = columna;
+	}
+	
 	
 	public int getFila() 
 	{
