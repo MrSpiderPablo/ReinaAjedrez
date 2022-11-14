@@ -20,8 +20,8 @@ public class Posicion
 		{
 			throw new NullPointerException("No se permite posición nula");
 		}
-		setFila(fila);
-		setColumna(columna);
+		fila = posicion.fila;
+		columna = posicion.columna;
 	}
 	
 	
