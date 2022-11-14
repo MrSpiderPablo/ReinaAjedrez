@@ -9,8 +9,8 @@ public class Posicion
 	
 	public Posicion(int fila, char columna) 
 	{
-		this.fila = fila;
-		this.columna = columna;
+		setFila(fila);
+		setColumna(columna);
 	}
 	
 	public Posicion (Posicion posicion) 
