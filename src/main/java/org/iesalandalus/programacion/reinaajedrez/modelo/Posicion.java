@@ -15,6 +15,11 @@ public class Posicion
 	
 	public Posicion (Posicion posicion) 
 	{
+		
+		if (posicion == null) 
+		{
+			throw new NullPointerException("No se permite posición nula");
+		}
 		setFila(fila);
 		setColumna(columna);
 	}
