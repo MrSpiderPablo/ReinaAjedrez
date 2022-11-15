@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reinaajedrez.modelo;
 
+import javax.naming.OperationNotSupportedException;
+
 public class Reina 
 {
 	private Color color;
@@ -61,6 +63,84 @@ public class Reina
 			throw new NullPointerException("No se aceptan posiciones nulas");
 		}
 		this.posicion = posicion;
+	}
+	
+	public void mover(Direccion direccion, int pasos) throws OperationNotSupportedException
+	{
+		if (direccion == null) 
+		{
+			throw new NullPointerException("No se aceptan posiciones nulas");
+		}
+		
+		if (pasos < 1 || pasos > 7) 
+		{
+			throw new IllegalArgumentException("Los pasos deben estar comprendidos entre 1 y 7");
+		}
+		
+		String movimientoNoValido = "Movimiento No Valido";
+		
+		switch(direccion) 
+		{
+		case NORTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() + pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case SUR:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() - pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case ESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() + pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case OESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() - pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case NORESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() + pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case SURESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() - pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+		}
 	}
 	
 	
