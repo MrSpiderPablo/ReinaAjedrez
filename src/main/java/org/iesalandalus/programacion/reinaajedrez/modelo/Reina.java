@@ -13,6 +13,23 @@ public class Reina
 		color = Color.BLANCO;
 		posicion = new Posicion(1, 'd');
 	}
+	
+	
+
+	public Reina(Color color) 
+	{
+		this();
+		this.color = color;
+		
+		if (Color.NEGRO != null) 
+		{
+			posicion = new Posicion(8, 'd');
+			
+		}else if (Color.BLANCO != null) 
+		{
+			posicion = new Posicion(1, 'd');
+		}
+	}
 
 
 	public Color getColor() 
