@@ -10,6 +10,7 @@ public class Reina
 	
 	public Reina() 
 	{
+		color = Color.BLANCO;
 		posicion = new Posicion(1, 'd');
 	}
 
