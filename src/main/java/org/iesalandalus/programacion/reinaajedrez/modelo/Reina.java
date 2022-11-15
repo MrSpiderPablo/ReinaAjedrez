@@ -6,6 +6,14 @@ public class Reina
 	private Posicion posicion;
 	
 	
+	
+	
+	public Reina() 
+	{
+		posicion = new Posicion(1, 'd');
+	}
+
+
 	public Color getColor() 
 	{
 		return color;
