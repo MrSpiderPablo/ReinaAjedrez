@@ -1,5 +1,9 @@
 package org.iesalandalus.programacion.reinaajedrez;
 
+import java.awt.Color;
+
+import org.iesalandalus.programacion.utilidades.Entrada;
+
 public class Consola 
 {
 	private Consola() 
@@ -25,9 +29,11 @@ public class Consola
 		while (opcion < 1 || opcion > 4) 
 		{
 			System.out.println("Elija una opcion del menu: ");
+			opcion = Entrada.entero();
 		}
 		return opcion;
 	}
+	
 	
 	public static void mostrarMenuDirecciones() 
 	{
