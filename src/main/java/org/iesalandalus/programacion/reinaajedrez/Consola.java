@@ -18,6 +18,25 @@ public class Consola
 		System.out.println("Opción 4: Salir");
 	}
 	
+	public static void mostrarMenuDirecciones() 
+	{
+		System.out.println("Norte");
+		
+		System.out.println("Noreste");
+		
+		System.out.println("Este");
+		
+		System.out.println("Sureste");
+		
+		System.out.println("Sur");
+		
+		System.out.println("Suroeste");
+		
+		System.out.println("Oeste");
+		
+		System.out.println("Noroeste");
+	}
+	
 	public static void despedirse() 
 	{
 		System.out.println("¡Que tenga suerte en su partida!");
