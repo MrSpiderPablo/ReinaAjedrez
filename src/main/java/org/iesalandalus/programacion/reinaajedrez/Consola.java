@@ -79,6 +79,18 @@ public class Consola
 		
 	}
 	
+	public static int elegirPasos() 
+	{
+		int pasos = 0;
+		
+		System.out.println("Introduzca el numero de pasos a seguir: ");
+		pasos = Entrada.entero();
+		
+		
+		return pasos;
+		
+	}
+	
 	public static void despedirse() 
 	{
 		System.out.println("¡Que tenga suerte en su partida!");
