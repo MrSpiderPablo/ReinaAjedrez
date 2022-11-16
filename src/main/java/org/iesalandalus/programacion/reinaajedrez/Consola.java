@@ -1,8 +1,8 @@
 package org.iesalandalus.programacion.reinaajedrez;
 
-import java.awt.Color;
 
 import org.iesalandalus.programacion.reinaajedrez.modelo.Direccion;
+import org.iesalandalus.programacion.reinaajedrez.modelo.Color;
 import org.iesalandalus.programacion.utilidades.Entrada;
 
 public class Consola 
@@ -35,15 +35,17 @@ public class Consola
 		return opcion;
 	}
 	
-//	public static Color elegirColor() 
-//	{
-//		while (color == null) 
-//		{
-//			System.out.println("Elija un")
-//		}
-//		return Color;
-//		
-//	}
+	public static Color elegirColor() 
+	{
+		Color color = null;
+		while (color == null) 
+		{
+			System.out.println("Elija un color: ");
+			System.out.println("Color: " + color);
+		}
+		return color;
+		
+	}
 	
 	
 	public static void mostrarMenuDirecciones() 
