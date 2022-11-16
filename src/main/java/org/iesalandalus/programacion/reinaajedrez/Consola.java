@@ -17,4 +17,9 @@ public class Consola
 		
 		System.out.println("Opción 4: Salir");
 	}
+	
+	public static void despedirse() 
+	{
+		System.out.println("¡Que tenga suerte en su partida!");
+	}
 }
