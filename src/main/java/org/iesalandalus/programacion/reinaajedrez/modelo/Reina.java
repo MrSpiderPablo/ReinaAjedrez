@@ -140,6 +140,29 @@ public class Reina
 			{
 				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
 			}
+			break;
+		case NOROESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() + pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		case SUROESTE:
+			try 
+			{
+				posicion.setFila(posicion.getColumna() - pasos);
+				
+			}catch (IllegalArgumentException e) 
+			{
+				throw new OperationNotSupportedException(movimientoNoValido + e.getMessage());
+			}
+			break;
+		default:
+			break;
 		}
 	}
 	
