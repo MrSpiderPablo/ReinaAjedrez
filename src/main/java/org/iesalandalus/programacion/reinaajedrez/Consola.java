@@ -2,6 +2,7 @@ package org.iesalandalus.programacion.reinaajedrez;
 
 import java.awt.Color;
 
+import org.iesalandalus.programacion.reinaajedrez.modelo.Direccion;
 import org.iesalandalus.programacion.utilidades.Entrada;
 
 public class Consola 
@@ -34,6 +35,16 @@ public class Consola
 		return opcion;
 	}
 	
+//	public static Color elegirColor() 
+//	{
+//		while (color == null) 
+//		{
+//			System.out.println("Elija un")
+//		}
+//		return Color;
+//		
+//	}
+	
 	
 	public static void mostrarMenuDirecciones() 
 	{
@@ -52,6 +63,17 @@ public class Consola
 		System.out.println("Oeste");
 		
 		System.out.println("Noroeste");
+	}
+	
+	public static Direccion elegirDireccion() 
+	{
+		Direccion direccion = null;
+		while (direccion == null)
+		{
+			System.out.println("Elija una direccion: ");
+		}
+		return direccion;
+		
 	}
 	
 	public static void despedirse() 
