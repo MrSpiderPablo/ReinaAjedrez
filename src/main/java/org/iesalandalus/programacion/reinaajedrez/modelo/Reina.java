@@ -165,6 +165,16 @@ public class Reina
 			break;
 		}
 	}
+
+
+
+	@Override
+	public String toString() 
+	{
+		return String.format("Reina [color=%s, posicion=%s]", color, posicion);
+	}
+	
+	
 	
 	
 }
