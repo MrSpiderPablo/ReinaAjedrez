@@ -71,6 +71,7 @@ public class Consola
 		while (direccion == null)
 		{
 			System.out.println("Elija una direccion: ");
+			System.out.println("Direccion: " + direccion);
 		}
 		return direccion;
 		
