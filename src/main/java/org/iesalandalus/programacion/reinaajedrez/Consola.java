@@ -18,6 +18,17 @@ public class Consola
 		System.out.println("Opción 4: Salir");
 	}
 	
+	public static int elegirOpcionMenu() 
+	{
+		int opcion = 0;
+		
+		while (opcion < 1 || opcion > 4) 
+		{
+			System.out.println("Elija una opcion del menu: ");
+		}
+		return opcion;
+	}
+	
 	public static void mostrarMenuDirecciones() 
 	{
 		System.out.println("Norte");
