@@ -18,7 +18,7 @@ public class Posicion
 		
 		if (posicion == null) 
 		{
-			throw new NullPointerException("No se permite posición nula");
+			throw new NullPointerException("ERROR: No es posible copiar una posición nula.");
 		}
 		fila = posicion.fila;
 		columna = posicion.columna;
@@ -51,7 +51,7 @@ public class Posicion
 	@Override
 	public String toString() 
 	{
-		return String.format("Posicion [fila=%s, columna=%s]", fila, columna);
+		return String.format(" fila=1, columna=a", fila, columna);
 	}
 
 	public int getFila() 
@@ -61,7 +61,7 @@ public class Posicion
 	public void setFila(int fila) 
 	{
 		if (fila < 1 || fila > 8) {
-			throw new IllegalArgumentException("Esta posicion no es correcta");
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
 		}
 		this.fila = fila;
 	}
@@ -73,7 +73,7 @@ public class Posicion
 	{
 		if (columna < 'a' || columna > 'h') 
 		{
-			throw new IllegalArgumentException("Esta posicion no es correcta");
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		}
 		this.columna = columna;
 	}

@@ -74,7 +74,7 @@ public class Reina
 		
 		if (pasos < 1 || pasos > 7) 
 		{
-			throw new IllegalArgumentException("Los pasos deben estar comprendidos entre 1 y 7");
+			throw new IllegalArgumentException("ERROR: El número de pasos debe estar comprendido entre 1 y 7.");
 		}
 		
 		String movimientoNoValido = "ERROR: Movimiento no válido (se sale del tablero).";
