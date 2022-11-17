@@ -81,11 +81,40 @@ public class Consola
 	
 	public static Direccion elegirDireccion() 
 	{
-		Direccion direccion = null;
-		while (direccion == null)
+		Direccion direccion = Direccion.NORTE;
+		int d = 0;
+		while (d != 1 && d != 2 && d != 3 && d != 4 && d != 5 && d != 6 && d != 7 && d != 8)
 		{
 			System.out.println("Elija una direccion: ");
-			System.out.println("Direccion: " + direccion);
+			d = Entrada.entero();
+			switch(d) 
+			{
+			case 1:
+				direccion = Direccion.NORTE;
+				break;
+			case 2:
+				direccion = Direccion.NORESTE;
+				break;
+			case 3:
+				direccion = Direccion.ESTE;
+				break;
+			case 4:
+				direccion = Direccion.SURESTE;
+				break;
+			case 5:
+				direccion = Direccion.SUR;
+				break;
+			case 6:
+				direccion = Direccion.SUROESTE;
+				break;
+			case 7:
+				direccion = Direccion.OESTE;
+				break;
+			case 8:
+				direccion = Direccion.NOROESTE;
+				break;
+			default:
+			}
 		}
 		return direccion;
 		
