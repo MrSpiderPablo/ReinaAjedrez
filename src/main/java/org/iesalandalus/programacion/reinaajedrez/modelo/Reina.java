@@ -77,7 +77,7 @@ public class Reina
 			throw new IllegalArgumentException("Los pasos deben estar comprendidos entre 1 y 7");
 		}
 		
-		String movimientoNoValido = "Movimiento no válido(se sale del tablero)";
+		String movimientoNoValido = "Movimiento no válido(se sale del tablero).";
 		
 		switch(direccion) 
 		{
