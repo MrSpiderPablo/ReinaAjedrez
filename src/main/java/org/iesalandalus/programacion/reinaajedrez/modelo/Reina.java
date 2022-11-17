@@ -171,7 +171,7 @@ public class Reina
 	@Override
 	public String toString() 
 	{
-		return String.format("Reina [color=%s, posicion=%s]", color, posicion);
+		return String.format("Reina [color=Blanco, posicion=(fila=1, columna=d]", color, posicion);
 	}
 	
 	
