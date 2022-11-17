@@ -37,11 +37,23 @@ public class Consola
 	
 	public static Color elegirColor() 
 	{
-		Color color = null;
-		while (color == null) 
+		Color color = Color.BLANCO;
+		int c = 0;
+		
+		while (c != 1 && c != 2) 
 		{
-			System.out.println("Elija un color: ");
-			System.out.println("Color: " + color);
+			System.out.println("Elija un color(1 es blanco y 2 es negro):  ");
+			c = Entrada.entero();
+			switch(c) 
+			{
+			case 1:
+				color = Color.BLANCO;
+				break;
+			case 2:
+				color = Color.NEGRO;
+				break;
+			default:
+			}
 		}
 		return color;
 		
