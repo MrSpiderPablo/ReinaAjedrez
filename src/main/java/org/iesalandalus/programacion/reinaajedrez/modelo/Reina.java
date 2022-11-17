@@ -69,7 +69,7 @@ public class Reina
 	{
 		if (direccion == null) 
 		{
-			throw new NullPointerException("ERROR: La dirección no puede ser nula");
+			throw new NullPointerException("ERROR: La dirección no puede ser nula.");
 		}
 		
 		if (pasos < 1 || pasos > 7) 
