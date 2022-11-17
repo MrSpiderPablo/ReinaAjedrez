@@ -1,8 +1,13 @@
 package org.iesalandalus.programacion.reinaajedrez;
 
-public class MainApp {
+import org.iesalandalus.programacion.reinaajedrez.modelo.Reina;
+
+public class MainApp 
+{
+	private static Reina reina;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 	}
 }
