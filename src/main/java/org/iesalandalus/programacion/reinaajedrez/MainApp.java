@@ -9,6 +9,14 @@ public class MainApp
 	
 	public static void main(String[] args) 
 	{
+		System.out.println("Opción 1: Crear reina por defecto");
+		
+		System.out.println("Opción 2: Crear reina eligiendo el color");
+		
+		System.out.println("Opción 3: Mover");
+		
+		System.out.println("Opción 4: Salir");
+		
 		int opcion;
 		
 		System.out.println("Elija una opcion:");
